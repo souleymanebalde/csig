@@ -24,10 +24,10 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/demande" element={<DemandePage />} />
           <Route path="/planification" element={<PlanificationPage />} />
-          <Route path="/demandeur" element={<DemandeurDashboard />} />
-          <Route path="/laborantin" element={<LaborantinDashboard />} />
-          <Route path="/responsable" element={<ResponsableDashboard />} />
-          <Route path="/dg" element={<DgDashboard />} />
+          <Route path="/dashboard-demandeur" element={<DemandeurDashboard />} />
+          <Route path="/dashboard-laborantin" element={<LaborantinDashboard />} />
+          <Route path="/dashboard-responsable" element={<ResponsableDashboard />} />
+          <Route path="/dashboard-dg" element={<DgDashboard />} />
         </Routes>
       </div>
       <Footer />

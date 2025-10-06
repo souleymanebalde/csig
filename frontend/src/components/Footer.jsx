@@ -1,12 +1,12 @@
-import React from "react";
-import "../css/Footer.css";
+import "../css/footer.css";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer">
-      <p>© 2025 Cité des Sciences et de l'Innovation de Guinée (CSIG)</p>
+      <div className="footer-content">
+        <p>© 2025 Cité des Sciences et de l’Innovation de Guinée</p>
+        <p>Contact : contact@csig.gov.gn | +224 620 00 00 00</p>
+      </div>
     </footer>
   );
 }
-
-export default Footer;

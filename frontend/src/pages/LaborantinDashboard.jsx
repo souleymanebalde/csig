@@ -1,20 +1,15 @@
-import React from 'react';
-import '../css/Page.css';
+import React from "react";
+import "../css/Dashboard.css";
 
-
-function LaborantinDashboard() {
+export default function LaborantinDashboard() {
   return (
-    <div className="page">
-      <h1>Espace Laborantin</h1>
-      <p>Liste des prestations à réaliser :</p>
-      <ul>
-        <li>Préparer les équipements pour la demande #001</li>
-        <li>Effectuer les analyses demandées</li>
-        <li>Voir la planification des prestations</li>
-      </ul>
-  
+    <div className="dashboard">
+      <h2>Tableau de bord - Laborantin</h2>
+      <div className="cards">
+        <div className="card">Prestations en cours</div>
+        <div className="card">Mon planning</div>
+        <div className="card">Historique des analyses</div>
+      </div>
     </div>
   );
 }
-
-export default LaborantinDashboard;

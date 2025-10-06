@@ -1,17 +1,27 @@
 import React from "react";
-import "../css/Page.css";
+import { useNavigate } from "react-router-dom";
+import "../css/home.css";
 
-function HomePage() {
+export default function Home() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/login");
+  };
+
   return (
-    <div className="page">
-      <h1>Bienvenue sur la plateforme de gestion des laboratoires de la CSIG</h1>
-      <p>
-        Cette plateforme permet aux chercheurs et institutions de soumettre des
-        demandes de prestations d'analyse ou de recherche, et de suivre leur
-        planification.
-      </p>
+    <div className="home-container">
+      <div className="hero-section">
+        <h1>Bienvenue sur la plateforme de gestion des laboratoires de la CSIG</h1>
+        <p>
+          Cette plateforme permet aux chercheurs et institutions de soumettre des
+          demandes de prestations d'analyse ou de recherche, de suivre leur
+          demande et d'obtenir leurs résultats.
+        </p>
+        <button className="cta-button" onClick={handleClick}>
+          Connectez-vous pour commencer !
+        </button>
+      </div>
     </div>
   );
 }
-
-export default HomePage;

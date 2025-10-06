@@ -1,18 +1,15 @@
-import React from 'react';
-import '../css/Page.css';
+import React from "react";
+import "../css/Dashboard.css";
 
-function DgDashboard() {
+export default function DgDashboard() {
   return (
-    <div className="page">
-      <h1>Espace Directeur Général</h1>
-      <p>Indicateurs de performance (KPIs) :</p>
-      <ul>
-        <li>Nombre total de demandes : 45</li>
-        <li>Taux de satisfaction : 92%</li>
-        <li>Prestations payantes : 15</li>
-      </ul>
+    <div className="dashboard">
+      <h2>Tableau de bord - Directeur Général</h2>
+      <div className="cards">
+        <div className="card">Statistiques globales</div>
+        <div className="card">Performance des laboratoires</div>
+        <div className="card">Rapports et indicateurs clés</div>
+      </div>
     </div>
   );
 }
-
-export default DgDashboard;

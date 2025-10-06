@@ -1,17 +1,15 @@
-import React from 'react';
-import '../css/Page.css';
+import React from "react";
+import "../css/Dashboard.css";
 
-function ResponsableDashboard() {
+export default function ResponsableDashboard() {
   return (
-    <div className="page">
-      <h1>Espace Responsable de laboratoire</h1>
-      <p>Prestations à valider :</p>
-      <ul>
-        <li>Demande #001 — en attente de validation</li>
-        <li>Demande #002 — en cours de traitement</li>
-      </ul>
+    <div className="dashboard">
+      <h2>Tableau de bord - Responsable de Labo</h2>
+      <div className="cards">
+        <div className="card">Valider les demandes</div>
+        <div className="card">Planifier les prestations</div>
+        <div className="card">Suivi du personnel et du matériel</div>
+      </div>
     </div>
   );
 }
-
-export default ResponsableDashboard;

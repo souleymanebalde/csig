@@ -1,0 +1,39 @@
+.dashboard {
+  padding: 50px;
+  background-color: #ffffff;
+  color: #0E4382;
+  min-height: 80vh;
+}
+
+.dashboard h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #0E4382;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #0E4382;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  background-color: #082c56;
+}

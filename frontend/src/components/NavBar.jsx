@@ -1,19 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../css/Navbar.css";
+import "../css/navbar.css";
+import logo from "../assets/images/csig_logo.png"; // place ton logo dans src/assets/
 
-function Navbar() {
+export default function Navbar() {
   return (
     <nav className="navbar">
-      <h2 className="logo">CSIG Labs</h2>
-      <div className="nav-links">
-        <Link to="/">Accueil</Link>
-        <Link to="/demande">Faire une demande</Link>
-        <Link to="/planification">Planification</Link>
-        <Link to="/login">Connexion</Link>
+      <div className="navbar-left">
+        <img src={logo}  alt="CSIG Logo" className="logo" />
+      </div>
+      <div className="navbar-right">
+        <a href="/">Accueil</a>
+        <a href="/login">Connexion</a>
+        <a href="/dashboard">Tableau de bord</a>
       </div>
     </nav>
   );
 }
-
-export default Navbar;

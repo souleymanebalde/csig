@@ -1,6 +1,37 @@
 .navbar {
-  background-color: #004080;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0E4382;
+  padding: 12px 40px;
   color: white;
-  padding: 15px 30px;
-  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 45px;
+  background-color: white;
+}
+
+.site-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-right a:hover {
+  color: #ffdd57;
 }

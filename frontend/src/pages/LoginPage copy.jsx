@@ -12,15 +12,15 @@ function LoginPage() {
     e.preventDefault();
 
     // Simulation de l'authentification
-    //if (email && password) {
-    //  alert(`Connexion réussie en tant que ${userType}`);
+    if (email && password) {
+      alert(`Connexion réussie en tant que ${userType}`);
 
-    // Redirection selon le type d'utilisateur
-    if (userType === "demandeur") navigate("/dashboard-demandeur");
-    else if (userType === "laborantin") navigate("/dashboard-laborantin");
-    else if (userType === "responsable") navigate("/dashboard-responsable");
-    else if (userType === "directeur") navigate("/dashboard-dg");
-  //}
+      // Redirection selon le type d'utilisateur
+      if (userType === "demandeur") navigate("/dashboard-demandeur");
+      else if (userType === "laborantin") navigate("/dashboard-laborantin");
+      else if (userType === "responsable") navigate("/dashboard-responsable");
+      else if (userType === "directeur") navigate("/dashboard-directeur");
+    }
   };
 
   return (
@@ -28,10 +28,24 @@ function LoginPage() {
       <h1>Connexion</h1>
       
       <form className="formulaire" onSubmit={handleLogin}>
-        
+        <label>Email</label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+
+        <label>Mot de passe</label>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
         
 
-        <label>Type d'utilisateur</label>
+        <label>Type d’utilisateur</label>
         <select
           value={userType}
           onChange={(e) => setUserType(e.target.value)}
